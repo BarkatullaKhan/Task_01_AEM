@@ -1,0 +1,81 @@
+.perfect_bean_container{
+    height: auto;
+    background-color: #FAF7F5;
+    padding-bottom: 20px;
+   
+    
+}
+.perfect_bean_details{
+    display: flex;
+    padding-bottom: 2.5rem;
+  
+   
+}
+.perfect_bean_title{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+
+.left_image,.right_image{
+   
+    width: 250px;
+    height:400px;
+}
+.left_image{
+  margin-left: -50%;
+ 
+}
+.right_image{
+   margin-right: -50%;
+   float: right;
+  
+}
+
+.perfect_bean_texts{
+    display: flex;
+    width:auto;
+}
+.left{
+    background-color: #FAF7F5;
+    text-align: left;
+    padding: 20px;
+}
+.right{
+    float: right;
+    background-color: #FAF7F5;
+    text-align: left;
+    padding: 20px;
+}
+.or_text{
+    padding: 20px;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  
+}
+
+.quiz_btn_container{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+.qb{
+ 
+    font-size: 20px;
+    color: #007584;
+    margin: 0 auto;
+ 
+    padding: 15px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #CCF2F2;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,37 @@
+.footer_container{
+    height: 350px;
+    background-color: #2B2B2D;
+    color: white;
+}
+.footer_logo_container{
+    height: 20%;
+    margin: 20px;
+    padding: 20px;
+}
+.footer_logo{
+    height: 90%;
+    width: 120px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 5px 20px;
+
+
+}
+.content{
+   width: 20%;
+   padding: 10px;
+}
+.content>ul{
+    list-style: none;
+    color: #67D1D1;
+}
+.content>h3{
+    margin-left: 40px;
+}
+a{
+    text-decoration: none;
+    color: #67D1D1;
+}
