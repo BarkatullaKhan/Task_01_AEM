@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories='aemApp.client'}" data-sly-unwrap>
+</meta>
+<div data-sly-use.roasterModel="aemApp.core.models.RoastersModel"></div>
+<h1 data-sly-test="${!roasterModel.roasters}">Add Roaster details</h1>
+
+
+  <div class="roaster" data-sly-list.roaster="${roasterModel.roasters}">
+
+
+    <a href="${roaster.pageLink}" class="roasterContent">
+      <img src="${roaster.roasterImg}" alt="image" srcset="" class="roasterImg">
+     
+      <p >${roaster.title}</p>
+      <p>${roaster.description}</p>
+  
+    </a>
+  
+      
+  
+  </div>
+  <div class="btn-container" >
+   <button class="btn-left" id="btn-left" onclick="previousSlide()" ><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+   <p id="curr"></p> <p>/</p> <p id="tot"></p>
+   <button class=" btn-right" id="btn-right" onclick="nextSlide()"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+  </div>

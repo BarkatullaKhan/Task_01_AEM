@@ -1,0 +1,40 @@
+<div data-sly-use.cofeeLockdownModel="aemApp.core.models.CofeeLockdownModel"></div>
+
+<div class="cofee_lockdown">
+  <div class="title">
+    <h1>Coffee Lowdown</h1>
+  </div>
+  <div >
+    <img src="${cofeeLockdownModel.cofeeImage}" alt="Image" srcset="" class="cofee_img">
+  </div>
+  <div class="details_text">
+    <div class="left_details">
+      <h2 data-sly-test="${!cofeeLockdownModel.leftTitle}">Left Title</h2>
+      <h2>${cofeeLockdownModel.leftTitle}</h2>
+      <div>
+        <p data-sly-test="${!cofeeLockdownModel.leftDescription}">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus quasi nisi quaerat, harum repellat modi. Ad quibusdam qui iste dolorum quasi tempora ea non suscipit excepturi. Velit, architecto illum.
+        </p>
+        <p>
+          ${cofeeLockdownModel.leftDescription}
+        </p>
+      </div>
+    </div>
+    <div class="right_details">
+      <h2  data-sly-test=" ${!cofeeLockdownModel.rightTitle}">Right Title</h2>
+      <h2 >${cofeeLockdownModel.rightTitle}</h2>
+      <div>
+        <p data-sly-test="${!cofeeLockdownModel.rightDescription}">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi facilis ipsam incidunt consequatur harum eaque hic cum, quis ad facere asperiores pariatur reprehenderit nemo iure rem, voluptates nesciunt quos atque.
+        </p>
+        <p>
+          ${cofeeLockdownModel.rightDescription}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="quiz_btn_container">
+    <a href="https://www.beanz.com/us/en/questionnaire.html" class="qb">Learn more about coffee</a>
+
+  </div>
+</div>

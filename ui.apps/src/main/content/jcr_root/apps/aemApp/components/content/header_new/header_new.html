@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='aemApp.client'}" data-sly-unwrap>
+</meta>
+
+<div class="header">
+
+  <a href="http://localhost:4503/content/aemApp/en/home.html"><img src="/content/dam/aemApp/beanz-white.svg" alt=""
+      srcset="" id="logo"></a>
+
+  <!-- <div>
+    <ul data-sly-list.items="${headerModel.header}" class="items">
+      <li class="navItem">${items.itemName}</li>
+      
+    </ul>
+  </div> -->
+
+
+  <div class="topnav" data-sly-list="${currentPage.listChildren}">
+    <a class="active" href="${item.path}.html">${item.title}</a>
+
+  </div>
+
+</div>

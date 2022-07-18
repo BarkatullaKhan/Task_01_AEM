@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Cofee Lockdown"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <cofee_image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                        autoStart="{Boolean}false"
+                        class="cq-droptarget"
+                        fieldLabel="Upload Image"
+                        fileNameParameter="./fileName"
+                        fileReferenceParameter="./cofeeImage"
+                        mimeTypes="[image]"
+                        multiple="{Boolean}false"
+                        name="./imageFile"
+                        title="Upload Image Asset"
+                        uploadUrl="${suffix.path}"
+                        useHTML5="{Boolean}true"/>
+                    <left_title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Left Title"
+                        name="./leftTitle"/>
+                    <left_description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Left Description"
+                        name="./leftDescription"/>
+                    <right_title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Right Title"
+                        name="./rightTitle"/>
+                    <right_description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Right Description"
+                        name="./rightDescription"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

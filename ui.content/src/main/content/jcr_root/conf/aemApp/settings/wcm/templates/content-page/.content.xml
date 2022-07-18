@@ -2,6 +2,8 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
+        cq:lastModified="{Date}2022-06-30T14:49:23.229+05:30"
+        cq:lastModifiedBy="admin"
         cq:templateType="/conf/aemApp/settings/wcm/template-types/content-page"
         jcr:description="Simple content page for aemApp"
         jcr:primaryType="cq:PageContent"

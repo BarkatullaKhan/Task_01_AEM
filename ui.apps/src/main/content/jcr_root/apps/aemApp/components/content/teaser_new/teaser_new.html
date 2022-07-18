@@ -1,0 +1,15 @@
+<div data-sly-use.teaserModel="aemApp.core.models.NewTeaser" data-sly-unwrap></div>
+<div data-sly-test="${!teaserModel.teasers}"><h1>Add teasers</h1></div>
+<div class="teasers" data-sly-list.teaser="${teaserModel.teasers}">
+  <div class="teaser-container">
+    <div class="teaser-image-container">
+      <img src="${teaser.teaserImage}" alt="teaser image here" class="teaser_img">
+    </div>
+
+    <h1 data-sly-test="${!teaser.teaserTitle}">Teaser Title</h1>
+    <h1>${teaser.teaserTitle}</h1>
+    <div class="teaser-desc">
+      <p>${teaser.teaserDescription}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.teaser-container{
+    height: 300px;
+    width: 20%;
+    margin: 10px;
+    padding: .5rem .5rem;
+    text-align: center;
+    
+}
+
+.teaser-image-container{
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.teaser_img{
+    height: 100%;
+    width: 60%;
+}
+
+.teasers{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

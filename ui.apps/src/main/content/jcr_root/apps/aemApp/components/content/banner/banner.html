@@ -1,0 +1,16 @@
+<div data-sly-use.bannerModel="aemApp.core.models.BannerModel"></div>
+
+<div class="banne-container">
+  <img src="${bannerModel.bannerImage}" alt="Banner image" class="back-image">
+  <div class="inner-banner">
+    <h1 data-sly-test="${!bannerModel.bannerTitle }"> Your title goes here</h1>
+    <h1>${bannerModel.bannerTitle}</h1>
+    <div class="banner_desc">
+      <p data-sly-test="${!bannerModel.description }">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui, facere repudiandae, fuga possimus amet deserunt voluptatibus quos laborum animi dolore fugiat? Dolorum aperiam atque ut quidem enim, magni in.</p>
+      <p>${bannerModel.description }</p>
+    </div>
+    <div class="banner_action">
+      <a data-sly-test="${bannerModel.actionText }" href="${bannerModel.actionLink}" class="action_link">${bannerModel.actionText }</a>
+    </div>
+  </div>
+</div>
