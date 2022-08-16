@@ -4,20 +4,22 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-07-19T11:53:44.725+05:30"
+        cq:lastModified="{Date}2022-08-12T16:03:10.689+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-07-19T11:54:00.732+05:30"
+        cq:lastReplicated="{Date}2022-08-16T12:04:42.549+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
         cq:tags="[aemapp:home_page,aemapp:beanz_home,aemapp:user_home]"
         cq:template="/conf/aemApp/settings/wcm/templates/content-page"
         jcr:description="This is beanz home page"
         jcr:isCheckedOut="{Boolean}true"
-        jcr:mixinTypes="[mix:versionable]"
+        jcr:mixinTypes="[mix:lockable,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"
         jcr:uuid="06e6680e-1b47-4682-a520-4c16ef9af71f"
+        sling:redirect="true"
         sling:resourceType="aemApp/components/structure/page"
+        sling:vanityPath="/home"
         id="home_id">
         <root
             jcr:primaryType="nt:unstructured"
@@ -28,28 +30,27 @@
                 <banner
                     jcr:created="{Date}2022-06-23T16:52:19.774+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-06-23T16:53:30.036+05:30"
+                    jcr:lastModified="{Date}2022-08-12T15:49:44.758+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemApp/components/content/banner"
-                    actionLink="https://www.beanz.com/us/en/coffee.html"
-                    actionText="Start Exploring"
+                    actionLink="/shop-coffee"
+                    actionText=" Start Exploring "
                     bannerImage="/content/dam/aemApp/Beanz_Website_3000x1536_Homepage_Header_B_new.webp"
                     bannerTitle="Fresh beans from local roasters, delivered to your door."
                     description="You found us! That means you're after coffee that pours and tastes like your favorite cafe, from the greatest third-wave roasters in the country. All at your fingertips."/>
-                <title_985742767
-                    jcr:created="{Date}2022-06-23T16:54:50.989+05:30"
+                <my_title
+                    jcr:created="{Date}2022-08-03T11:58:18.508+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-06-23T16:55:02.606+05:30"
+                    jcr:lastModified="{Date}2022-08-04T11:19:58.993+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="How It Works"
-                    sling:resourceType="aemApp/components/content/title"
-                    type="h1"/>
+                    sling:resourceType="aemApp/components/content/my_title"
+                    title="How It Works"/>
                 <teaser_new
                     jcr:created="{Date}2022-07-07T17:37:20.390+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-07-19T11:32:25.132+05:30"
+                    jcr:lastModified="{Date}2022-08-02T15:02:48.727+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemApp/components/content/teaser_new">
@@ -76,19 +77,18 @@
                             teaserTitle="Subscribe and save"/>
                     </allTeasers>
                 </teaser_new>
-                <title
-                    jcr:created="{Date}2022-07-01T17:18:37.469+05:30"
+                <my_title_1958189551
+                    jcr:created="{Date}2022-08-03T12:51:23.768+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-07-01T17:19:23.770+05:30"
+                    jcr:lastModified="{Date}2022-08-03T12:51:28.824+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Meet our roasters"
-                    sling:resourceType="aemApp/components/content/title"
-                    type="h1"/>
+                    sling:resourceType="aemApp/components/content/my_title"
+                    title="Meet our roasters"/>
                 <roasters
                     jcr:created="{Date}2022-07-01T16:13:35.167+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-07-19T11:53:44.714+05:30"
+                    jcr:lastModified="{Date}2022-08-04T16:00:21.756+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemApp/components/content/roasters">
@@ -149,61 +149,77 @@
                             title="Klach"/>
                         <item9
                             jcr:primaryType="nt:unstructured"
-                            description="Wilmington"
+                            description="sada dsfsd fvvfc "
                             pageLink="https://www.beanz.com/us/en/coffee/roasters/olympia.html"
-                            roasterImg="https://www.beanz.com/content/dam/marketplace/us/roasting-brands/roasters/BeanzUS_Brandywine_logo_200x200.jpg"
-                            title="Brandywine"/>
+                            roasterImg="https://www.beanz.com/content/dam/marketplace/us/roasting-brands/roasters/BeanzUS_Klatch_logo_200x200.jpg"
+                            title="sad makm"/>
+                        <item10
+                            jcr:primaryType="nt:unstructured"
+                            description=" vshdd smkam samdd"
+                            pageLink="https://www.beanz.com/us/en/coffee/roasters/olympia.html"
+                            roasterImg="https://www.beanz.com/content/dam/marketplace/us/roasting-brands/roasters/BeanzUS_Klatch_logo_200x200.jpg"
+                            title="nen nasj "/>
                     </roasterItems>
                 </roasters>
                 <perfect_bean
                     jcr:created="{Date}2022-06-27T00:24:47.901+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-06-27T11:00:30.500+05:30"
+                    jcr:lastModified="{Date}2022-08-12T16:03:10.684+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemApp/components/content/perfect_bean"
                     leftDescription="Brewing by hand on a V60 or Kalita? Or are you more of a passionate drip drinker? These coffees are roasted to take things to a whole new level."
                     leftImage="/content/dam/aemApp/filter-coffee.png"
                     leftTitle="Drip &amp; Pour Over"
+                    quizBtnLink="/shop-coffee"
+                    quizBtnText="Take Our Quiz"
                     rightDescription="Straight up or mellowed out with milk or creamer in a latte or cappuccino, our range of espresso beans should be just what you're after."
                     rightImage="/content/dam/aemApp/espresso-coffee.png"
-                    rightTitle="Espresso"/>
-                <cofee_lockdown
+                    rightTitle="Espresso"
+                    title="Find your perfect bean"/>
+                <coffee_lowdown
                     jcr:created="{Date}2022-06-27T11:18:18.976+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-06-27T12:00:02.307+05:30"
+                    jcr:lastModified="{Date}2022-08-12T15:59:17.769+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemApp/components/content/cofee_lockdown"
+                    sling:resourceType="aemApp/components/content/coffee_lowdown"
                     cofeeImage="/content/dam/aemApp/coffee-101.webp"
+                    coffeeLockBtnLink="/shop-coffee"
+                    coffeeLockBtnText="Learn more about coffee"
                     leftDescription=" When it comes to roasting, each of these three levels embody their own unique mouthfeel and experience: go lighter for bright acidity and delicate flavors, medium for balanced sweetness and acidity, or darker for a richer, sharper cup.  "
                     leftTitle="Three levels of roasting"
                     rightDescription="A blend is a mix of beans from various origins expertly combined for maximum balance and consistency. However! Single origin coffees come from a single place, often in limited supply, and are loved for their distinctive flavors and taste of place. Good news is, we offer both."
-                    rightTitle="Blends vs Single Origin "/>
+                    rightTitle="Blends vs Single Origin "
+                    title="Coffee Lowdown"/>
                 <responsivegrid
-                    jcr:created="{Date}2022-06-29T18:31:49.722+05:30"
+                    jcr:created="{Date}2022-07-26T18:10:29.033+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-06-29T18:31:49.722+05:30"
+                    jcr:lastModified="{Date}2022-07-26T18:10:29.033+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/responsivegrid">
                     <cq:responsive jcr:primaryType="nt:unstructured"/>
-                    <cofee_lockdown_copy
+                    <coffee_lowdown_copy
                         jcr:created="{Date}2022-06-27T11:18:18.976+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-07-01T12:01:40.475+05:30"
+                        jcr:lastModified="{Date}2022-08-12T15:59:37.814+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemApp/components/content/cofee_lockdown"
+                        sling:resourceType="aemApp/components/content/coffee_lowdown"
                         cofeeImage="/content/dam/aemApp/coffee-101.webp"
+                        coffeeLockBtnLink="/shop-coffee"
+                        coffeeLockBtnText="Learn more about coffee newww"
                         leftDescription=" When it comes to roasting, each of these three levels embody their own unique mouthfeel and experience: go lighter for bright acidity and delicate flavors, medium for balanced sweetness and acidity, or darker for a richer, sharper cup.  "
-                        leftTitle="Three levels of roasting new"
+                        leftTitle="Three levels of roasting"
                         rightDescription="A blend is a mix of beans from various origins expertly combined for maximum balance and consistency. However! Single origin coffees come from a single place, often in limited supply, and are loved for their distinctive flavors and taste of place. Good news is, we offer both."
-                        rightTitle="Blends vs Single Origin new"/>
+                        rightTitle="Blends vs Single Origin "
+                        title="Coffee Lowdown New"/>
                 </responsivegrid>
             </responsivegrid>
         </root>
     </jcr:content>
     <shop-coffee/>
     <gifts/>
+    <our-roasters/>
 </jcr:root>

@@ -19,6 +19,13 @@ public class CofeeLockdownModel {
     @ValueMapValue
     private String rightDescription;
     
+    
+    @ValueMapValue
+	private String coffeeLockBtnText;
+
+	@ValueMapValue
+	private String coffeeLockBtnLink;
+    
 	public String getCofeeImage() {
 		return cofeeImage;
 	}
@@ -34,6 +41,16 @@ public class CofeeLockdownModel {
 	public String getRightDescription() {
 		return rightDescription;
 	}
+	public String getCoffeeLockBtnText() {
+		return coffeeLockBtnText;
+	}
+	public String getCoffeeLockBtnLink() {
+		return coffeeLockBtnLink;
+	}
+	
+	
     
+	
+	
     
 }

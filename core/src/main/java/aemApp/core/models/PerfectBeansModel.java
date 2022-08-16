@@ -25,6 +25,12 @@ public class PerfectBeansModel {
 
     @ValueMapValue
     private String rightImage;
+    
+    @ValueMapValue
+    private String quizBtnText;
+    
+    @ValueMapValue
+    private String quizBtnLink;
 
 	public String getLeftImage() {
 		return leftImage;
@@ -48,6 +54,14 @@ public class PerfectBeansModel {
 
 	public String getRightImage() {
 		return rightImage;
+	}
+
+	public String getQuizBtnText() {
+		return quizBtnText;
+	}
+
+	public String getQuizBtnLink() {
+		return quizBtnLink;
 	}
 
     

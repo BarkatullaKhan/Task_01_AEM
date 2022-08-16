@@ -11,20 +11,6 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <file
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                        autoStart="{Boolean}false"
-                        class="cq-droptarget"
-                        fieldLabel="Banner background image"
-                        fileNameParameter="./fileName"
-                        fileReferenceParameter="./bannerImage"
-                        mimeTypes="[image]"
-                        multiple="{Boolean}false"
-                        name="./imageFile"
-                        title="Upload Image Asset"
-                        uploadUrl="${suffix.path}"
-                        useHTML5="{Boolean}true"/>
                     <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -45,6 +31,13 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Action link"
                         name="./actionLink"/>
+                    <path
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Select Path of your image"
+                        fieldLabel="Image path"
+                        name="./bannerImage"
+                        rootPath="/content"/>
                 </items>
             </column>
         </items>

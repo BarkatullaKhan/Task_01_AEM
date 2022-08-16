@@ -2,6 +2,9 @@ package aemApp.core.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import javax.jcr.Node;
 import javax.jcr.NodeIterator;
@@ -34,13 +37,17 @@ public class RestV5 extends SlingSafeMethodsServlet {
 	Resource resource;
 	@Reference
 	private ResourceResolverFactory resolverFactory;
+	static List<String> componentsList=new ArrayList<String>();
 
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
 			throws ServletException, IOException {
 		WCMMode wcmMode = WCMMode.fromRequest(request);
+		
+		componentsList=new ArrayList<>();
 
 		String nodePath = "/content/aemApp/en/" + request.getParameter("page");
+		
 
 		response.setContentType("json");
 		response.setContentType("application/json");
@@ -63,8 +70,6 @@ public class RestV5 extends SlingSafeMethodsServlet {
 				NodeIterator nodeItr = node.getNodes();
 				int respLevel = 1;
 
-				
-
 				while (nodeItr.hasNext()) {
 					Node cNode = nodeItr.nextNode();
 					if (cNode.getName().equals("root")) {
@@ -77,8 +82,7 @@ public class RestV5 extends SlingSafeMethodsServlet {
 						continue;
 
 					}
-					if (cNode.getName().contains("responsivegrid")) { // NOPMD by BarkatullaKhan on 1/7/22 7:32 PM
-						// out.write(cNode.getProperty("sling:resourceType").getString());
+					if (cNode.getName().contains("responsivegrid")) { 
 						if (respLevel == 1) {
 							nodeItr = cNode.getNodes();
 							respLevel++;
@@ -126,7 +130,8 @@ public class RestV5 extends SlingSafeMethodsServlet {
 
 						continue;
 					}
-					if (nodeItr.hasNext()) {
+					
+					 if (nodeItr.hasNext()) {
 						out.write("\""
 								+ getComponentNameFromResourceString(
 										cNode.getProperty("sling:resourceType").getString())
@@ -154,15 +159,22 @@ public class RestV5 extends SlingSafeMethodsServlet {
 		out.flush();
 		out.close();
 	}
-
+	
 	static String getComponentNameFromResourceString(String resourceName) {
 		String name = "";
-		for (int i = resourceName.length() - 1; i >= 0; i--) {
-			if (resourceName.charAt(i) == '/') {
-				name = resourceName.substring(i + 1, resourceName.length());
-				return name;
-
-			}
+//		for (int i = resourceName.length() - 1; i >= 0; i--) {
+//			if (resourceName.charAt(i) == '/') {
+//				name = resourceName.substring(i + 1, resourceName.length());
+////				return name;
+//
+//			}
+//		
+//			
+//		}
+		name=resourceName.substring(resourceName.lastIndexOf('/')+1, resourceName.length());
+		componentsList.add(name);
+		if(Collections.frequency(componentsList,name)>1){
+			name=name+"_"+(Collections.frequency(componentsList,name)-1);
 		}
 
 		return name;
